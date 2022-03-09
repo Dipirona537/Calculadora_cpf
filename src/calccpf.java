@@ -47,6 +47,11 @@ public class calccpf {
         {
             verificador2 = 0;
         }
+        if (cpf_str.equals("11111111111") || cpf_str.equals("22222222222") || cpf_str.equals("33333333333") || cpf_str.equals("44444444444") || cpf_str.equals("55555555555") || cpf_str.equals("66666666666") || cpf_str.equals("77777777777") || cpf_str.equals("88888888888") || cpf_str.equals("99999999999") || cpf_str.equals("00000000000"))
+        {
+            System.out.println("CPF inválido");
+            System.exit(0);
+        }
         if (verificador1 == digito1 && verificador2 == digito2)
         {
             System.out.println("CPF válido");
